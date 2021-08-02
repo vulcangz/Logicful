@@ -1,0 +1,18 @@
+### Get Option Sets
+GET http://localhost:3000/api/api/option-set
+Accept: */*
+Cache-Control: no-cache
+
+### Set Option Set
+POST http://localhost:3000/api/api/option-set/set
+Content-Type: application/json
+
+{
+  "value": "https://test.com",
+  "name" : "testing",
+  "type" : "remote"
+}
+
+<> 2020-09-02T113547.200.json
+<> 2020-09-02T112932.200.json
+<> 2020-09-02T112924.200.json

@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "api": "env-cmd go run .",
+    "run:tests" : "wait-on http-get://localhost:3000 && cd frontend/app && npm run cypress:ci && cd ../../ && gcloud -q app deploy",
+    "start": "cd frontend/app && npm run start",
+    "env": "env-cmd -f ./.env --use-shell",
+    "deploy": "cd frontend/app && npm run build && cd ../../ && concurrently -k \"npm run api\" \"npm run run:tests\""
+  },
+  "dependencies": {
+    "cross-env": "7.0.2",
+    "env-cmd": "^10.1.0",
+    "wait-on": "^5.2.0",
+    "concurrently": "^5.3.0"
+  }
+}

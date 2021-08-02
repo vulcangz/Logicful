@@ -1,0 +1,12 @@
+{
+    "time": 1597179127589,
+    "blocks": [
+        {
+            "type": "paragraph",
+            "data": {
+                "text": "This is my re-usable legal disclaimer."
+            }
+        }
+    ],
+    "version": "2.18.0"
+}

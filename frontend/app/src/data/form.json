@@ -1,0 +1,48 @@
+{
+    "fields": [
+        {
+            "name": "new-field-je3b",
+            "label": "New Field",
+            "type": "block",
+            "value": {
+                "time": 1597179127589,
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Yo this works<br>"
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "hello"
+                        }
+                    }
+                ],
+                "version": "2.18.0"
+            },
+            "expanded": false,
+            "id": "5p3k015pt4si6qpl5qsht",
+            "updated": false
+        },
+        {
+            "name": "new-field-h4h4",
+            "label": "New Field",
+            "type": "combobox",
+            "expanded": true,
+            "id": "1583dhmjec3jsfntpwj6gz9",
+            "updated": true,
+            "options": [
+                {
+                    "label": "Option 1",
+                    "value": "option_1"
+                },
+                {
+                    "label": "Option 2",
+                    "value": "option_2"
+                }
+            ]
+        }
+    ]
+}

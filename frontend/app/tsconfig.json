@@ -1,0 +1,27 @@
+{
+  "extends": "@tsconfig/svelte/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@app/*" : ["src/*"],
+      "*": ["web_modules/.types/*"]
+    },
+    "module": "esnext",
+    "target": "esnext",
+    "jsx": "preserve",
+    "allowSyntheticDefaultImports": true,
+    /* more strict checking for errors that per-file transpilers like `esbuild` would crash */
+    "isolatedModules": true,
+    /* noEmit - We only use TypeScript for type checking. */
+    "noEmit": true,
+    /* Additional Options */
+    "strict": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "useDefineForClassFields": true,
+    "types": ["snowpack-env", "svelte", "jest", "@testing-library/jest-dom", "cypress", "@testing-library/cypress"]
+  },
+  "include": ["src", "types"],
+  "exclude": ["node_modules"]
+}

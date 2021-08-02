@@ -1,0 +1,7 @@
+node_modules
+debug
+dev
+lib
+requests
+package.json
+package-lock.json

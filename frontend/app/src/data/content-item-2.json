@@ -1,0 +1,18 @@
+{
+    "time": 1597179127589,
+    "blocks": [
+        {
+            "type": "paragraph",
+            "data": {
+                "text": "Yo this works, second<br>"
+            }
+        },
+        {
+            "type": "paragraph",
+            "data": {
+                "text": "hello this is second"
+            }
+        }
+    ],
+    "version": "2.18.0"
+}

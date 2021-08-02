@@ -1,0 +1,98 @@
+{
+    "formId": "41257f68-8ae0-4b2c-912e-6bd525f625df",
+    "id": "564ae046-a411-481d-96b6-712b28668c66",
+    "details": {
+        "New Field tlti": {
+            "first": {
+                "name": "new-field-4i20.first",
+                "type": "string",
+                "value": "Sydne"
+            },
+            "last": {
+                "name": "new-field-4i20.last",
+                "type": "string",
+                "value": "Anschutz"
+            },
+            "middle": {
+                "name": "new-field-4i20.middle",
+                "type": "string",
+                "value": "Louise"
+            },
+            "prefix": {
+                "name": "new-field-4i20.prefix",
+                "type": "string",
+                "value": "Mr"
+            }
+        },
+        "New Field o7yj": "Yeet",
+        "New Field njvc": null,
+        "New Field uxhe": {
+            "address1": {
+                "name": "new-field-zr66.address1",
+                "type": "string",
+                "value": "8045 Metcalf Ave"
+            },
+            "address2": {
+                "name": "new-field-zr66.address2",
+                "type": "string",
+                "value": "416"
+            },
+            "city": {
+                "name": "new-field-zr66.city",
+                "type": "string",
+                "value": "Overland Park"
+            },
+            "state": {
+                "name": "7b743c1f-b135-4179-860b-8e8b1d001e5a.state",
+                "type": "combobox",
+                "value": "American Samoa"
+            },
+            "zip": {
+                "name": "new-field-zr66.zip",
+                "type": "string",
+                "value": "66502"
+            }
+        },
+        "Submission Date": "9/14/2020, 6:48:55 PM",
+        "submission_id": "564ae046-a411-481d-96b6-712b28668c66"
+    },
+    "meta": {
+        "env": {
+            "browser": {
+                "name": "Microsoft Edge",
+                "version": "85.0.564.51"
+            },
+            "engine": {
+                "name": "Blink"
+            },
+            "os": {
+                "name": "macOS",
+                "version": "10.15.3",
+                "versionName": "Catalina"
+            },
+            "platform": {
+                "type": "desktop",
+                "vendor": "Apple"
+            }
+        }
+    },
+    "fieldMeta": {
+        "new-field-4i20": {
+            "type": "full-name"
+        },
+        "new-field-tvx0": {
+            "type": "string"
+        },
+        "new-field-u432": {
+            "type": "date",
+            "userSelectedValue": false
+        },
+        "new-field-zr66": {
+            "type": "address"
+        }
+    },
+    "status": "",
+    "newSubmissionKey": "d696b18a-ea1c-43cc-80b6-7123dca22ee8",
+    "creationDate": "2020-09-14T23:48:55Z",
+    "createBy": "maddox"
+}
