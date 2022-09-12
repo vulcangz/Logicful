@@ -1,9 +1,10 @@
 package distributedlock
 
 import (
+	"logicful/service/cache"
+
 	"github.com/go-redsync/redsync/v4"
 	"github.com/go-redsync/redsync/v4/redis/goredis/v8"
-	"github.com/logicful/service/cache"
 )
 
 func Acquire(key string) (*redsync.Mutex, error) {

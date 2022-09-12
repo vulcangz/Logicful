@@ -1,19 +1,20 @@
 package formsubmission
 
 import (
-	"api/features/form"
-	"cloud.google.com/go/firestore"
 	"encoding/json"
 	"errors"
+	"logicful/features/form"
+	"logicful/models"
+	"logicful/service/date"
+	"logicful/service/db"
+	"logicful/service/storage"
+	"time"
+
+	"cloud.google.com/go/firestore"
 	"github.com/google/uuid"
-	"github.com/logicful/models"
-	"github.com/logicful/service/date"
-	"github.com/logicful/service/db"
-	"github.com/logicful/service/storage"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
-	"time"
 )
 
 func MarkRead(ids map[string]bool, formId string, user models.User) error {

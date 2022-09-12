@@ -3,10 +3,11 @@ package searcher
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/blevesearch/bleve"
-	"github.com/logicful/service/storage"
 	"io/ioutil"
+	"logicful/service/storage"
 	"strings"
+
+	"github.com/blevesearch/bleve"
 )
 
 type JsonIndex struct {

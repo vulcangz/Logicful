@@ -1,24 +1,25 @@
 package main
 
 import (
-	"api/features/contentblock"
-	"api/features/email"
-	"api/features/folder"
-	"api/features/form"
-	"api/features/formsubmission"
-	"api/features/optionset"
-	"api/features/s3store"
-	"api/features/team"
-	"api/features/user"
-	"api/features/workflow"
-	"api/handler"
-	"github.com/julienschmidt/httprouter"
-	"github.com/logicful/service/db"
-	"github.com/logicful/service/queue"
 	"log"
+	"logicful/features/contentblock"
+	"logicful/features/email"
+	"logicful/features/folder"
+	"logicful/features/form"
+	"logicful/features/formsubmission"
+	"logicful/features/optionset"
+	"logicful/features/s3store"
+	"logicful/features/team"
+	"logicful/features/user"
+	"logicful/features/workflow"
+	"logicful/handler"
+	"logicful/service/db"
+	"logicful/service/queue"
 	"net/http"
 	"os"
 	"time"
+
+	"github.com/julienschmidt/httprouter"
 )
 
 func main() {

@@ -1,8 +1,9 @@
 package s3store
 
 import (
+	"logicful/service/storage"
+
 	"github.com/google/uuid"
-	"github.com/logicful/service/storage"
 )
 
 func SetJson(key string, value []byte) (string, error) {

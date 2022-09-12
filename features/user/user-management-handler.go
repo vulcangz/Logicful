@@ -1,11 +1,12 @@
 package user
 
 import (
-	"github.com/julienschmidt/httprouter"
-	"github.com/logicful/models"
-	"github.com/logicful/service/httpextensions"
+	"logicful/models"
+	"logicful/service/httpextensions"
 	"net/http"
 	"strings"
+
+	"github.com/julienschmidt/httprouter"
 )
 
 func RegisterHandler(w http.ResponseWriter, r *http.Request, ps httprouter.Params) {

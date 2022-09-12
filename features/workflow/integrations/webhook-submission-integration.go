@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"encoding/json"
 	"errors"
-	"github.com/logicful/models"
-	"github.com/logicful/service/queue"
+	"logicful/models"
+	"logicful/service/queue"
 	"net/http"
 	"time"
 )

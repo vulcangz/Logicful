@@ -1,13 +1,14 @@
 package team
 
 import (
-	"api/features/user"
-	"api/handler"
 	_ "encoding/json"
-	"github.com/julienschmidt/httprouter"
-	"github.com/logicful/models"
-	"github.com/logicful/service/httpextensions"
+	"logicful/features/user"
+	"logicful/handler"
+	"logicful/models"
+	"logicful/service/httpextensions"
 	"net/http"
+
+	"github.com/julienschmidt/httprouter"
 )
 
 func TeamHandler(w http.ResponseWriter, r *http.Request, ps httprouter.Params) {

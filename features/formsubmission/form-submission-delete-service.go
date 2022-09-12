@@ -1,12 +1,13 @@
 package formsubmission
 
 import (
-	"api/features/form"
-	"cloud.google.com/go/firestore"
 	"context"
 	"errors"
-	"github.com/logicful/models"
-	"github.com/logicful/service/db"
+	"logicful/features/form"
+	"logicful/models"
+	"logicful/service/db"
+
+	"cloud.google.com/go/firestore"
 )
 
 func Delete(ids []string, formId string, user models.User) error {

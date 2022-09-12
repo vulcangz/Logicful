@@ -1,14 +1,15 @@
 package contentblock
 
 import (
+	"logicful/models"
+	"logicful/service/date"
+	"logicful/service/db"
+	"time"
+
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/dynamodb"
 	"github.com/aws/aws-sdk-go/service/dynamodb/dynamodbattribute"
 	"github.com/google/uuid"
-	"github.com/logicful/models"
-	"github.com/logicful/service/date"
-	"github.com/logicful/service/db"
-	"time"
 )
 
 var instance = db.New()

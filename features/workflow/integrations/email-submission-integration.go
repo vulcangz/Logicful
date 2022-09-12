@@ -2,13 +2,14 @@ package integrations
 
 import (
 	"encoding/json"
-	"github.com/antonholmquist/jason"
-	"github.com/logicful/models"
-	"github.com/logicful/service/emailer"
-	"github.com/logicful/service/queue"
+	"logicful/models"
+	"logicful/service/emailer"
+	"logicful/service/queue"
 	"os"
 	"strings"
 	"time"
+
+	"github.com/antonholmquist/jason"
 )
 
 func RegisterEmail() {

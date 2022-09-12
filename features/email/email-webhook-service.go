@@ -1,10 +1,11 @@
 package email
 
 import (
-	"api/features/user"
-	"cloud.google.com/go/firestore"
 	"context"
-	"github.com/logicful/service/db"
+	"logicful/features/user"
+	"logicful/service/db"
+
+	"cloud.google.com/go/firestore"
 )
 
 func SetSuppressed(email string) {

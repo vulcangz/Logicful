@@ -3,12 +3,13 @@ package optionset
 import (
 	"context"
 	"errors"
-	"github.com/google/uuid"
-	"github.com/logicful/models"
-	"github.com/logicful/service/date"
-	"github.com/logicful/service/db"
-	"google.golang.org/api/iterator"
+	"logicful/models"
+	"logicful/service/date"
+	"logicful/service/db"
 	"time"
+
+	"github.com/google/uuid"
+	"google.golang.org/api/iterator"
 )
 
 var instance = db.Instance()

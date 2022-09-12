@@ -1,11 +1,11 @@
 package workflow
 
 import (
-	"api/features/form"
-	"api/features/workflow/integrations"
 	"encoding/json"
-	"github.com/logicful/models"
-	"github.com/logicful/service/queue"
+	"logicful/features/form"
+	"logicful/features/workflow/integrations"
+	"logicful/models"
+	"logicful/service/queue"
 )
 
 func Register() {

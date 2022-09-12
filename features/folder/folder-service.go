@@ -1,15 +1,16 @@
 package folder
 
 import (
-	"cloud.google.com/go/firestore"
 	"context"
 	"errors"
-	"github.com/google/uuid"
-	"github.com/logicful/models"
-	"github.com/logicful/service/date"
-	"github.com/logicful/service/db"
-	"google.golang.org/api/iterator"
+	"logicful/models"
+	"logicful/service/date"
+	"logicful/service/db"
 	"time"
+
+	"cloud.google.com/go/firestore"
+	"github.com/google/uuid"
+	"google.golang.org/api/iterator"
 )
 
 func Set(folder models.Folder, user models.User) (models.Folder, error) {

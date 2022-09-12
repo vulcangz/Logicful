@@ -1,12 +1,13 @@
 package optionset
 
 import (
-	"api/handler"
 	_ "encoding/json"
-	"github.com/julienschmidt/httprouter"
-	"github.com/logicful/models"
-	"github.com/logicful/service/httpextensions"
+	"logicful/handler"
+	"logicful/models"
+	"logicful/service/httpextensions"
 	"net/http"
+
+	"github.com/julienschmidt/httprouter"
 )
 
 func SetHandler(w http.ResponseWriter, r *http.Request, ps httprouter.Params) {

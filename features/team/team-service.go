@@ -1,16 +1,17 @@
 package team
 
 import (
-	"api/features/user"
-	"cloud.google.com/go/firestore"
 	"context"
 	"errors"
-	"github.com/google/uuid"
-	"github.com/logicful/models"
-	"github.com/logicful/service/date"
-	"github.com/logicful/service/db"
-	"github.com/logicful/service/queue"
+	"logicful/features/user"
+	"logicful/models"
+	"logicful/service/date"
+	"logicful/service/db"
+	"logicful/service/queue"
 	"time"
+
+	"cloud.google.com/go/firestore"
+	"github.com/google/uuid"
 )
 
 func ByUser(user models.User) (models.Team, error) {

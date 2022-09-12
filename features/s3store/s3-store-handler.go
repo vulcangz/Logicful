@@ -2,11 +2,12 @@ package s3store
 
 import (
 	"errors"
-	"github.com/julienschmidt/httprouter"
-	"github.com/logicful/service/httpextensions"
 	"io/ioutil"
+	"logicful/service/httpextensions"
 	"net/http"
 	"strconv"
+
+	"github.com/julienschmidt/httprouter"
 )
 
 func SetJsonHandler(w http.ResponseWriter, r *http.Request, ps httprouter.Params) {

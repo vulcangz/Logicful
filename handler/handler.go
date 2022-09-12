@@ -1,8 +1,8 @@
 package handler
 
 import (
-	"api/features/user"
-	"github.com/logicful/models"
+	"logicful/features/user"
+	"logicful/models"
 	"net/http"
 	"strings"
 )

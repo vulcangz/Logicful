@@ -1,17 +1,18 @@
 package formsubmission
 
 import (
-	"cloud.google.com/go/firestore"
 	"context"
 	"encoding/json"
-	"github.com/logicful/models"
-	"github.com/logicful/service/db"
-	"github.com/logicful/service/distributedlock"
-	"github.com/logicful/service/queue"
-	"github.com/logicful/service/storage"
+	"log"
+	"logicful/models"
+	"logicful/service/db"
+	"logicful/service/distributedlock"
+	"logicful/service/queue"
+	"logicful/service/storage"
+
+	"cloud.google.com/go/firestore"
 	"github.com/robfig/cron/v3"
 	"google.golang.org/api/iterator"
-	"log"
 )
 
 func StartProcessor() {
