@@ -1,6 +1,6 @@
 package models
 
-import "github.com/dgrijalva/jwt-go"
+import "github.com/golang-jwt/jwt/v4"
 
 type User struct {
 	Id          string `json:"id" dynamodbav:"userId"`
@@ -12,8 +12,8 @@ type User struct {
 	Picture     string `json:"picture"`
 	Creatable
 	Changeable
-	EmailSuppressed  string `json:"emailSuppressed"`
-	EmailBounceCount string `json:"emailBounceCount"`
+	EmailSuppressed    string          `json:"emailSuppressed"`
+	EmailBounceCount   string          `json:"emailBounceCount"`
 	PendingTeamInvites map[string]bool `json:"pendingTeamInvites"`
 }
 

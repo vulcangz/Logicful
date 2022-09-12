@@ -4,17 +4,18 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"github.com/dgrijalva/jwt-go"
-	"github.com/google/uuid"
-	"github.com/logicful/models"
-	"github.com/logicful/service/date"
-	"github.com/logicful/service/db"
-	"golang.org/x/crypto/bcrypt"
-	"google.golang.org/api/iterator"
 	"log"
+	"logicful/models"
+	"logicful/service/date"
+	"logicful/service/db"
 	"os"
 	"strings"
 	"time"
+
+	"github.com/golang-jwt/jwt/v4"
+	"github.com/google/uuid"
+	"golang.org/x/crypto/bcrypt"
+	"google.golang.org/api/iterator"
 )
 
 func Login(user models.User) (models.TokenResponse, error) {

@@ -2,12 +2,13 @@ package user
 
 import (
 	"fmt"
-	"github.com/dgrijalva/jwt-go"
-	"github.com/logicful/models"
+	"logicful/models"
+	"os"
+
+	"github.com/golang-jwt/jwt/v4"
 	"golang.org/x/net/context"
 	"google.golang.org/api/oauth2/v2"
 	"google.golang.org/api/option"
-	"os"
 )
 
 func LoginFromGoogleToken(token string) (models.TokenResponse, error) {
