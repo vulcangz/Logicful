@@ -16,17 +16,18 @@ runtime: go114
 env: standard
 
 env_variables:
-    S3_ENDPOINT: s3.wasabisys.com
+    S3_ENDPOINT: s3.logicful.local
     S3_KEY: REDACTED
     S3_SECRET: REDACTED
     JWT_SIGN_TOKEN: REDACTED
     GOOGLE_OAUTH_SECRET: REDACTED
-    REDISHOST: 10.46.172.115
+    REDISHOST: 127.0.0.1
     REDISPORT: 6379
+    REDISPASS: ""
     POSTMARK_TOKEN: REDACTED
     POSTMARK_WEBHOOK_AUTH: REDACTED
     SEND_EMAILS: true
-    ROOT_DOMAIN: https://logicful.org
+    ROOT_DOMAIN: http://logicful.local
     QUEUE_PREFIX: prod
 
 vpc_access_connector:
